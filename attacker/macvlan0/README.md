@@ -17,7 +17,8 @@ net.ipv4.ip_forward=1
 ```
 ### and apply
 
-```sudo sysctl -p
+```bash
+sudo sysctl -p
 ```
 ## Enable Proxy ARP
 
