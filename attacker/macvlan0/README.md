@@ -15,11 +15,11 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 ```bash
 net.ipv4.ip_forward=1
 ```
-##and apply
+### and apply
 
 ```sudo sysctl -p
 ```
-# Enable Proxy ARP
+## Enable Proxy ARP
 
 ```bash
 echo 1 > /proc/sys/net/ipv4/conf/macvlan0/proxy_arp
@@ -31,7 +31,7 @@ echo 1 > /proc/sys/net/ipv4/conf/eth1/proxy_arp
 net.ipv4.conf.macvlan0.proxy_arp=1
 net.ipv4.conf.eth1.proxy_arp=1
 ```
-#Enable Promiscuous Mode
+### Enable Promiscuous Mode
 
 ```bash
 sudo ip link set macvlan0 promisc on
