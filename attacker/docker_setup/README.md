@@ -122,10 +122,9 @@ done
 
 ```bash
 sudo bash -c 'for i in $(seq 10 19); do docker exec attacker$i ab -n 50 -c 3 http://192.168.56.12/ & done; wait'
-'''
+```
 # to trigger threshold rule 
 
 ```bash
 sudo bash -c 'for i in $(seq 10 19); do docker exec attacker$i ab -n 500 -c 20 http://192.168.56.12/ & done; wait'
 ```
-#
