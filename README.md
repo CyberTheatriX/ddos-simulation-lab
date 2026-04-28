@@ -60,7 +60,7 @@ sudo bash -c 'for i in $(seq 10 19); do docker exec attacker$i ab -n 500 -c 20 h
 tail -f /var/log/suricata/fast.log
 ```
 # Purpose
--**This lab demonstrates:**
+**This lab demonstrates:**
 
  - How distributed HTTP floods appear in victim logs.
  - How Suricata rules can distinguish normal traffic vs. flood conditions.
